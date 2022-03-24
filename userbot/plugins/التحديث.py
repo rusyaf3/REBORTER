@@ -182,7 +182,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         pass
 
 
-@jmthon.on(admin_cmd(pattern="تحديث(| الان)?$"))
+@jmthon.on(admin_cmd(pattern="اعادة(| الان)?$"))
 async def upstream(event):
     "To check if the bot is up to date and update if specified"
     conf = event.pattern_match.group(1).strip()
@@ -211,7 +211,7 @@ async def upstream(event):
                 f"`Unfortunately, the directory {error} "
                 "does not seem to be a git repository.\n"
                 "But we can fix that by force updating the userbot using "
-                ".تحديث الان.`"
+                ".اعادة الان.`"
             )
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
@@ -247,7 +247,7 @@ async def upstream(event):
     if conf == "" and not force_update:
         await print_changelogs(event, ac_br, changelog)
         await event.delete()
-        return await event.respond(f"⌔ : لتحديث سورس سيلفا ارسل : `.تحديث الان` ")
+        return await event.respond(f"⌔ : لتحديث سورس سيلفا ارسل : `.اعادة الان` ")
 
     if force_update:
         await event.edit(
@@ -260,7 +260,7 @@ async def upstream(event):
 
 CMD_HELP.update(
     {
-        "التحديث": "**`.تحديث`\
+        "التحديث": "**`.اعادة`\
 \n للتحقق من وجود تحديثات في السورس ... \
 "
     }
