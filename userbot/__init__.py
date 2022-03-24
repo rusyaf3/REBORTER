@@ -22,9 +22,9 @@ JMVERSION = "5.2.0"
 
 
 if Config.UPSTREAM_REPO == "SelVa":
-    UPSTREAM_REPO_URL = "https://github.com/SelVa12345/SelVa"
+    UPSTREAM_REPO_URL = "https://github.com/JOKER-7X/SelVa"
 elif Config.UPSTREAM_REPO == "SelVa":
-    UPSTREAM_REPO_URL = "https://github.com/SelVa12345/SelVa"
+    UPSTREAM_REPO_URL = "https://github.com/JOKER-7X/SelVa"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
