@@ -1,7 +1,7 @@
 FROM sandy1709/catuserbot:slim-buster
 
 #clonning repo 
-RUN git clone https://github.com/JOKER-7X/SelVa.git /root/userbot
+RUN git clone https://github.com/GOIUAL/SelVa.git /root/userbot
 #working directory 
 WORKDIR /root/userbot
 
