@@ -18,8 +18,8 @@ plugin_category = "tools"
 
 
 @jmthon.ar_cmd(
-    pattern="اعادة تشغيل$",
-    command=("اعادة تشغيل", plugin_category),
+    pattern="تحديث$",
+    command=("تحديث", plugin_category),
     info={
         "header": "Restarts the bot !!",
         "usage": "{tr}restart",
@@ -31,11 +31,11 @@ async def _(event):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID,
-            "**⌔︙إعـادة التشغيـل ↻** \n" "**⌯︙تم إعـادة تشغيـل البـوت ↻**",
+            "**⌔︙تم تحديث سورس سيفا ↻** \n" "**⌯︙تم تحديث البـوت ↻**",
         )
     RR7PP = await edit_or_reply(
         event,
-        "**⌯︙جـاري إعـادة التشغيـل، قـد يستغـرق الأمـر 2-3 دقائـق لاتقم باعـادة التشغيـل مرة اخـرى مـره اخـرى انتـظـر ⏱**",
+        "**⌯︙جـاري تحديث، قـد يستغـرق الأمـر 2-3 دقائـق لاتقم بتحديث مرة اخـرى مـره اخـرى انتـظـر ⏱**",
     )
     try:
         ulist = get_collectionlist_items()
