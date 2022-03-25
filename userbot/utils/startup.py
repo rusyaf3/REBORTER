@@ -65,9 +65,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/b03342dc56474dde49aa9.jpg",
-                caption="🔺￤**بــوت سيلفا يـعـمـل بـنـجـاح**  ✅ \n🔺￤**قـنـاة الـسـورس**  :  @SU_SELVA\n🔺￤**مبرمج السورس**  :  @ttccss",
-                buttons=[(Button.url("🔺 كروب سيلفا 🔺", "https://t.me/br_selva"),)],
+                "https://telegra.ph/file/444692d94f35162813bd9.mp4",
+                caption="⌯￤**بــوت سيلفا يـعـمـل بـنـجـاح**  ✅ \n⌯￤**قـنـاة الـسـورس**  :  @SU_SELVA\n⌯￤**مبرمج السورس**  :  @ttccss\n⌯￤**مطور السورس**  :  @tt_t_4",
+                buttons=[(Button.url("🔺 جروب سيلفا 🔺", "https://t.me/br_selva"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -85,7 +85,7 @@ async def startupmessage():
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**🔺￤اهلا وسهلا لقد قمت باعاده تشغيل بـوت سيلفا تمت بنجاح**"
+                + "\n\n**⌯￤اهلا وسهلا لقد قمت بتحديث بـوت سيلفا تمت بنجاح**"
             )
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
