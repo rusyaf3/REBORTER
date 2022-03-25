@@ -67,7 +67,7 @@ async def startupmessage():
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/444692d94f35162813bd9.mp4",
                 caption="⌯￤**بــوت سيلفا يـعـمـل بـنـجـاح**  ✅ \n⌯￤**قـنـاة الـسـورس**  :  @SU_SELVA\n⌯￤**مبرمج السورس**  :  @ttccss\n⌯￤**مطور السورس**  :  @tt_t_4",
-                buttons=[(Button.url("🔺 جروب سيلفا 🔺", "https://t.me/br_selva"), (Button.url("مطور السورس", "https://t.me/tt_t_4"),)]
+                buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/SU_SELVA"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_selva"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/tt_t_4"),],[Button.url("⌯ جروب السورس ⌯", "https://t.me/br_selva"),],[Button.url("⌯ تحديثات السورس ⌯", "https://t.me/rmdan_karim"),]]
             )
     except Exception as e:
         LOGS.error(e)
