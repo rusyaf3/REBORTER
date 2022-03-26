@@ -201,16 +201,6 @@ async def bot_help(event):
 
 
 @jmthon.bot_cmd(
-    pattern=f"^ايدي$",
-)
-async def bot_help(event):
-    await event.reply(
-        f"مرحبا بك عزيزي..\n- [ايديك:]{user.id}\n\n**اسمك هو:** {user.first_name}\\n",
-        link_preview=False,
-    )
-
-
-@jmthon.bot_cmd(
     pattern=f"^bot$",
 )
 async def bot_help(event):
