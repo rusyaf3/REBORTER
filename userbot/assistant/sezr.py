@@ -37,9 +37,460 @@ async def bot_help(event):
         f"test bot :) ",
         link_preview=False,
     )
+  
+
+@jmthon.bot_cmd(
+    pattern=f"^هاي$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"خالتك جرت ورايا 😹💔 ",
+        link_preview=False,
+    )
+    
+ 
+ 
+@jmthon.bot_cmd(
+    pattern=f"^هيي$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"خالتك جرت ورايا 😹💔) ",
+        link_preview=False,
+    )
 
 
-@jmthon.ar_cmd(
+@jmthon.bot_cmd(
+    pattern=f"^سلام عليكم$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"وعليكم السلام 🌝💜 ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^السلام عليكم$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"وعليكم السلام 🌝💜",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^سلام$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"مع الف سلامه يقلبي متجيش تاني 😹💔🎶",
+        link_preview=False,
+    )    
+
+
+@jmthon.bot_cmd(
+    pattern=f"^مع سلامه$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"مع الف سلامه يقلبي متجيش تاني 😹💔🎶",
+        link_preview=False,
+    )
+    
+    
+@jmthon.bot_cmd(
+    pattern=f"^برايفت$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"خدوني معاكم برايفت والنبي 🥺💔",
+        link_preview=False,
+    )
+    
+    
+@jmthon.bot_cmd(
+    pattern=f"^تع برايفت$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"خدوني معاكم برايفت والنبي 🥺💔",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^النبي$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"عليه الصلاه والسلام 🌝💛",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^صلي علي النبي$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"عليه الصلاه والسلام 🌝💛",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^نعم$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"نعم الله عليك 🌚❤️",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^يا نعم$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"نعم الله عليك 🌚❤️",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^🙄$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"نزل عينك تحت كدا علشان هتخاد علي قفاك 😒❤️",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^🙄🙄$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"نزل عينك تحت كدا علشان هتخاد علي قفاك 😒❤️",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^😹$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"ضحكتك عثل زيكك ينوحيي 🌝❤️",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^😹😹$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"ضحكتك عثل زيكك ينوحيي 🌝❤️",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^ايدي$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"مرحبا بك عزيزي..\n- [ايديك:]{user.id}\n\n**اسمك هو:** {user.first_name}\\n",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+
+@jmthon.bot_cmd(
+    pattern=f"^bot$",
+)
+async def bot_help(event):
+    await event.reply(
+        f"test bot :) ",
+        link_preview=False,
+    )
+
+    
+ @jmthon.ar_cmd(
     pattern=f"^التكرار (تفعيل|تعطيل)$",
     command=("التكرار", plugin_category),
     info={
