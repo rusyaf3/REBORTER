@@ -4,7 +4,7 @@ from Jmthon.razan.resources.mybot import *
 
 from ..Config import Config
 
-ROZ_PIC = "https://telegra.ph/file/b03342dc56474dde49aa9.jpg"
+ROZ_PIC = "https://telegra.ph/file/bfde9a952eacdcaab3d8d.jpg"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 
@@ -17,11 +17,11 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
         if query.startswith("السورس") and event.query.user_id == bot.uid:
             buttons = [
                 [
-                    Button.url("⌯ قنـاة السـورس ⌯", "https://t.me/SU_SELVA"),
+                    Button.url("⌯ قنـاة السـورس ⌯", "https://t.me/RBBOU"),
                     Button.url("⌯ المطور ⌯", "https://t.me/ttccss"),
                 ]
             ]
-            buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/SU_SELVA"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_selva"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/tt_t_4"),],[Button.url("⌯ جروب السورس ⌯", "https://t.me/br_selva"),],[Button.url("⌯ تحديثات السورس ⌯", "https://t.me/rmdan_karim"),]]
+            buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/RBBOU"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_RBBOU"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/DAD_S2S2"),]]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
                 result = builder.photo(
                     ROZ_PIC, text=ROZ, buttons=buttons, link_preview=False
