@@ -65,9 +65,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/444692d94f35162813bd9.mp4",
-                caption="⌯￤**بــوت سيلفا يـعـمـل بـنـجـاح**  ✅ \n⌯￤**قـنـاة الـسـورس**  :  @SU_SELVA\n⌯￤**مبرمج السورس**  :  @ttccss\n⌯￤**مطور السورس**  :  @tt_t_4",
-                buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/SU_SELVA"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_selva"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/tt_t_4"),],[Button.url("⌯ جروب السورس ⌯", "https://t.me/br_selva"),],[Button.url("⌯ تحديثات السورس ⌯", "https://t.me/rmdan_karim"),]]
+                "https://telegra.ph/file/9cb105eb7b6e7c1df7666.jpg",
+                caption="⌯￤**بــوت ريبورتر يـعـمـل بـنـجـاح**  ✅ \n⌯￤**قـنـاة الـسـورس**  :  @RBBOU\n⌯￤**مبرمج السورس**  :  @ttccss\n⌯￤**مطور السورس**  :  @DAD_S2S2",
+                buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/RBBOU"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_selva"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/DAD_S2S2"),],[Button.url("⌯ جروب السورس ⌯", "https://t.me/sadhtgksyfgjtgwsd"),],[Button.url("⌯ تحديثات السورس ⌯", "https://t.me/hdfgjfgjfxcgtkyt"),]]
             )
     except Exception as e:
         LOGS.error(e)
@@ -85,7 +85,7 @@ async def startupmessage():
             message = await jmthon.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**⌯￤اهلا وسهلا لقد قمت بتحديث بـوت سيلفا تمت بنجاح**"
+                + "\n\n**⌯￤اهلا وسهلا لقد قمت بتحديث بـوت ريبورتر تمت بنجاح**"
             )
             await jmthon.edit_message(msg_details[0], msg_details[1], text)
             if gvarstatus("restartupdate") is not None:
@@ -183,12 +183,12 @@ async def load_plugins(folder):
 
 async def autojo():
     try:
-        await jmthon(JoinChannelRequest("@SU_SELVA"))
+        await jmthon(JoinChannelRequest("@RBBOU"))
         if gvar("AUTOEO") is False:
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@SU_SELVA"))
+                await jmthon(JoinChannelRequest("@RBBOU"))
             except BaseException:
                 pass
             try:
@@ -206,7 +206,7 @@ async def autozs():
             return
         else:
             try:
-                await jmthon(JoinChannelRequest("@SU_SELVA"))
+                await jmthon(JoinChannelRequest("@RBBOU"))
             except BaseException:
                 pass
             try:
@@ -246,10 +246,10 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "🔺￤ عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @SU_SELVA"
+        descript = "🔺￤ عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @RBBOU"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/Jmthonp.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة اشعارات سيلفا ", jmthon, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة اشعارات ريبورتر ", jmthon, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("⌯︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
@@ -275,7 +275,7 @@ async def verifyLoggerGroup():
                 "⌯︙حدث استثناء عند محاولة التحقق من PM_LOGGER_GROUP_ID.\n" + str(e)
             )
     else:
-        descript = "🔺￤ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @SU_SELVA"
+        descript = "🔺￤ وظيفه الكروب يحفظ رسائل الخاص اذا ما تريد الامر احذف الكروب نهائي \n  - @RBBOU"
         photobt = await jmthon.upload_file(file="Jmthon/razan/resources/start/Jmthonp.jpg")
         _, groupid = await create_supergroup(
             "مجموعة التخزين", jmthon, Config.TG_BOT_USERNAME, descript, photobt
