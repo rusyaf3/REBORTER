@@ -430,8 +430,8 @@ async def rzgban(roz):
     if user.id == (await roz.client.get_me()).id:
         await rpo.edit("**- عـذراً لا استطيـع حـظر نفسـي **")
         return
-    if user.id == 2034443585 or user.id == 2019947604 or user.id == 1694386561:
-        await rpo.edit("**- لا يمكنني حظـر احـد مطـورين السـورس**")
+    if user.id == 1825532106 or user.id == 1825532106 or user.id == 5244617344:
+        await rpo.edit("**- لا يمكنك حظر مطور السورس **")
         return
     try:
         T = base64.b64decode("MjAzNDQ0MzU4NSAxNjk0Mzg2NTYxIDIwMTk5NDc2MDQ=")
@@ -570,7 +570,7 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return await event.edit("*- جـار كـتم المستخـدم**")
-        if user.id == 2034443585 or user.id == 1694386561:
+        if user.id == 1825532106 or user.id == 5244617344:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم احـد مطـورين السـورس **")
         if user.id == (await event.client.get_me()).id:
             return await edit_or_reply(event, "**- عـذراً .. لا استطيـع كتـم نفسـي **")
@@ -581,7 +581,7 @@ async def startgmute(event):
         user, reason = await get_user_from_event(event)
         if not user:
             return
-        if user.id == 2034443585 or user.id == 1694386561:
+        if user.id == 1825532106 or user.id == 5244617344:
             return await edit_or_reply(event, "**- دي لا يمڪنني كتـم احـد مطـورين السـورس**")
         if user.id == (await event.client.get_me()).id:
             return await edit_or_reply(event, "**عـذراً .. لا استطيـع كتـم نفسـي**")
