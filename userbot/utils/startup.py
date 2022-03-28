@@ -65,7 +65,7 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/9cb105eb7b6e7c1df7666.jpg",
+                "https://telegra.ph/file/bfde9a952eacdcaab3d8d.jpg",
                 caption="⌯￤**بــوت ريبورتر يـعـمـل بـنـجـاح**  ✅ \n⌯￤**قـنـاة الـسـورس**  :  @RBBOU\n⌯￤**مبرمج السورس**  :  @ttccss\n⌯￤**مطور السورس**  :  @DAD_S2S2",
                 buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/RBBOU"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_selva"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/DAD_S2S2"),],[Button.url("⌯ جروب السورس ⌯", "https://t.me/sadhtgksyfgjtgwsd"),],[Button.url("⌯ تحديثات السورس ⌯", "https://t.me/hdfgjfgjfxcgtkyt"),]]
             )
