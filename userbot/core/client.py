@@ -141,7 +141,7 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**تقرير خطا جمثون**\n\n"
+                        text = "**تقرير خطا ريـبـورتـر**\n\n"
                         link = "[هنا](https://t.me/GroupJmthon)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"
@@ -256,7 +256,7 @@ class CatUserBotClient(TelegramClient):
                         pastelink = await paste_message(
                             ftext, pastetype="s", markdown=False
                         )
-                        text = "**تقرير خطا جمثون**\n\n"
+                        text = "**تقرير خطا ريـبـورتـر**\n\n"
                         link = "[هنا](https://t.me/GroupJmthon)"
                         text += "إذا كنت تريد يمكنك الإبلاغ عن ذلك"
                         text += f"- فقط قم بإعادة توجيه هذه الرسالة {link}.\n"

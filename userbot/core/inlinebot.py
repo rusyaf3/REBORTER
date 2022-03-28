@@ -11,7 +11,7 @@ from telethon.errors import QueryIdInvalidError
 from telethon.events import CallbackQuery, InlineQuery
 from youtubesearchpython import VideosSearch
 
-from userbot import jmthon
+from userbot import RBBOU
 
 from ..Config import Config
 from ..helpers.functions import rand_key
@@ -53,7 +53,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧᴊᴍᴛʜᴏɴⵧⵧⵧⵧⵧ⍣**\n[𝙅𝙈𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/JMTHON)\n\n"
+    text = f"**▾∮ مرحبا عزيزي {mention}**\n**▾اليكَ قائمة بازرار مضمنة لاوامر ↫**⍣ⵧⵧⵧⵧⵧ 𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍ⵧⵧⵧⵧⵧ⍣**\n[ 𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 🧸♥](https://t.me/RBBOU)\n\n"
     buttons = [
         (Button.inline("معلومات الملفات 🗂", data="check"),),
         (
@@ -208,7 +208,7 @@ def paginate_help(
     return pairs
 
 
-@jmthon.tgbot.on(InlineQuery)
+@RBBOU.tgbot.on(InlineQuery)
 async def inline_handler(event):
     builder = event.builder
     result = None
@@ -229,7 +229,7 @@ async def inline_handler(event):
             buttons = [
                 (
                     Button.inline("Stats", data="stats"),
-                    Button.url("DEV", "https://t.me/JMTHON"),
+                    Button.url("DEV", "https://t.me/RBBOU"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -421,7 +421,7 @@ async def inline_handler(event):
         elif string == "help":
             _result = main_menu()
             result = builder.article(
-                title="Jmthon Help™",
+                title="RBBOU Help™",
                 description="**▾∮ قائمة التعليمات الخاصة بــ جمثـون **",
                 text=_result[0],
                 buttons=_result[1],
@@ -558,7 +558,7 @@ async def inline_handler(event):
     else:
         buttons = [
             (
-                Button.url("قناة السورس", "t.me/JMTHON"),
+                Button.url("قناة السورس", "t.me/RBBOU"),
                 Button.url(
                     "المطور",
                     "t.me/RR7PP",
@@ -570,14 +570,14 @@ async def inline_handler(event):
             url=CATLOGO, size=0, mime_type="image/jpeg", attributes=[]
         )
         text, msg_entities = await event.client._parse_message_text(
-            "لجعل جمثون من نصيبك!", "md"
+            "لجعل ريـبـورتـر من نصيبك!", "md"
         )
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="[𝙅𝙈𝙏𝙃𝙊𝙉 𝙐𝙎𝙀𝙍𝘽𝙊𝙏 🧸♥](https://t.me/JMTHON)",
+            title="[ 𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍 🧸♥](https://t.me/RBBOU)",
             description="لـتنصيبه لك",
-            url="t.me/JMTHON",
+            url="t.me/RBBOU",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
@@ -587,7 +587,7 @@ async def inline_handler(event):
         await event.answer([result] if result else None)
 
 
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(b"close")))
+@RBBOU.tgbot.on(CallbackQuery(data=re.compile(b"close")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     buttons = [
@@ -596,14 +596,14 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit("غلق القائمة 🔒", buttons=buttons)
 
 
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(b"check")))
+@RBBOU.tgbot.on(CallbackQuery(data=re.compile(b"check")))
 async def on_plugin_callback_query_handler(event):
     text = f"الملفات 🗃 : {len(PLG_INFO)}\nعدد الاوامر 👨‍💻 : {len(CMD_INFO)}\
         \n\nمساعدة <اسم الملف> : للحصول على معلومات الملف المساعد المحدد\nمساعدة <الامر> : للحصول ع معلومات الامر المحدد.\nاستفسار <الاومر> : للبحث عن أي أوامر."
     await event.answer(text, cache_time=0, alert=True)
 
 
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(b"(.*)_menu")))
+@RBBOU.tgbot.on(CallbackQuery(data=re.compile(b"(.*)_menu")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     category = str(event.pattern_match.group(1).decode("UTF-8"))
@@ -614,7 +614,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text, buttons=buttons)
 
 
-@jmthon.tgbot.on(
+@RBBOU.tgbot.on(
     CallbackQuery(
         data=re.compile(b"back_([a-z]+)_([a-z1-9]+)_([0-9]+)_?([a-z1-9]+)?_?([0-9]+)?")
     )
@@ -646,14 +646,14 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(text, buttons=buttons)
 
 
-@jmthon.tgbot.on(CallbackQuery(data=re.compile(rb"mainmenu")))
+@RBBOU.tgbot.on(CallbackQuery(data=re.compile(rb"mainmenu")))
 @check_owner
 async def on_plug_in_callback_query_handler(event):
     _result = main_menu()
     await event.edit(_result[0], buttons=_result[1])
 
 
-@jmthon.tgbot.on(
+@RBBOU.tgbot.on(
     CallbackQuery(data=re.compile(rb"(.*)_prev\((.+?)\)_([a-z]+)_?([a-z]+)?_?(.*)?"))
 )
 @check_owner
@@ -684,7 +684,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(buttons=buttons)
 
 
-@jmthon.tgbot.on(
+@RBBOU.tgbot.on(
     CallbackQuery(data=re.compile(rb"(.*)_next\((.+?)\)_([a-z]+)_?([a-z]+)?_?(.*)?"))
 )
 @check_owner
@@ -712,7 +712,7 @@ async def on_plug_in_callback_query_handler(event):
     await event.edit(buttons=buttons)
 
 
-@jmthon.tgbot.on(
+@RBBOU.tgbot.on(
     CallbackQuery(
         data=re.compile(b"(.*)_cmdhelp_([a-z1-9]+)_([0-9]+)_([a-z]+)_([0-9]+)")
     )
