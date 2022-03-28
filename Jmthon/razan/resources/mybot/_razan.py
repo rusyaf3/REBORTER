@@ -4,7 +4,7 @@ from userbot.plugins import mention
 RAZAN = Config.TG_BOT_USERNAME
 # for alive
 ROZ = (
-    f"**♻╭──── • ⌁ • ────╮،**\n"
+    f"**╭──── • ⌁ • ────╮،**\n"
     f"**♻️╖ بوت ريـبـورتـر يعمل بنجاح 🤍،**\n"
     f"**💌╢ اصدار التليثون :** `1.23.0\n`"
     f"**✅╢ اصدار ريـبـورتـر :** `4.0.0`\n"
