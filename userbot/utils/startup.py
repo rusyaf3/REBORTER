@@ -66,8 +66,8 @@ async def startupmessage():
             Config.CATUBLOGO = await jmthon.tgbot.send_file(
                 BOTLOG_CHATID,
                 "https://telegra.ph/file/bfde9a952eacdcaab3d8d.jpg",
-                caption="⌯￤**بــوت ريبورتر يـعـمـل بـنـجـاح**  ✅ \n⌯￤**قـنـاة الـسـورس**  :  @RBBOU\n⌯￤**مبرمج السورس**  :  @ttccss\n⌯￤**مطور السورس**  :  @DAD_S2S2",
-                buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/RBBOU"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_selva"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/DAD_S2S2"),],[Button.url("⌯ جروب السورس ⌯", "https://t.me/sadhtgksyfgjtgwsd"),],[Button.url("⌯ تحديثات السورس ⌯", "https://t.me/hdfgjfgjfxcgtkyt"),]]
+                caption="⌯￤**بــوت ريبورتر يـعـمـل بـنـجـاح**  ✅ \n⌯￤**قـنـاة الـسـورس**  :  @RBBOU\n⌯￤**مبرمج السورس**  :  @ttccss\n⌯￤**مطور السورس**  :  @E_l_k_e_a_t_i_b",
+                buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/RBBOU"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_reborter"),],[Button.url("𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر", "https://t.me/ttccss"), Button.url("- ♫𝗘𝗹𝗸𝗲𝗮𝘁-𝗶𝗯 ¹: 🇾🇪⃤", "http://t.me/E_l_k_e_a_t_i_b"),],[Button.url("⌯ جروب السورس ⌯", "https://t.me/sadhtgksyfgjtgwsd"),],[Button.url("⌯ تحديثات السورس ⌯", "https://t.me/hdfgjfgjfxcgtkyt"),]]
             )
     except Exception as e:
         LOGS.error(e)
