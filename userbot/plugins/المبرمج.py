@@ -31,7 +31,7 @@ async def amireallyalive(event):
     gvarstatus("ALIVE_EMOJI") or "  - "
     gvarstatus("ALIVE_TEXT")
     CAT_IMG = (
-        gvarstatus("ALIVE_PIC") or " https://telegra.ph/file/9cb105eb7b6e7c1df7666.jpg "
+        gvarstatus("ALIVE_PIC") or " https://telegra.ph/file/5715569276b4b8e051c7c.jpg "
     )
     if CAT_IMG:
         CAT = [x for x in CAT_IMG.split()]
@@ -39,9 +39,9 @@ async def amireallyalive(event):
         PIC = random.choice(A_IMG)
         cat_caption = f" 𝙏𝙀𝙇𝙀𝙏𝙃𝙊𝙉 𝙍𝙀𝘽𝙊𝙍𝙏𝙀𝙍\n"
         cat_caption += f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
-        cat_caption += f"🧑‍💻╖ مبرمج السورس  : @DAD_S2S2\n"
+        cat_caption += f"🧑‍💻╖ مبرمج السورس  : @E_l_k_e_a_t_i_b\n"
         cat_caption += f"🌐╢ قناة السورس :  @RBBOU\n"
-        cat_caption += f"💌╜ جروب الدعم :  @br_RBBOU\n"
+        cat_caption += f"💌╜ جروب الدعم : @Music54Elkeatib\n"
         cat_caption += f"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n"
         await event.client.send_file(
             event.chat_id, PIC, caption=cat_caption, reply_to=reply_to_id

@@ -21,7 +21,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
                     Button.url("⌯ المطور ⌯", "https://t.me/ttccss"),
                 ]
             ]
-            buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/RBBOU"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_RBBOU"),],[Button.url("⌯ مطور السورس ⌯", "https://t.me/ttccss"), Button.url("⌯ مبرمج السورس ⌯", "http://t.me/DAD_S2S2"),]]
+            buttons = [[Button.url("⌯ قناة السورس ⌯", "http://t.me/RBBOU"), Button.url("⌯ شروحات السورس ⌯", "https://t.me/shro_RBBOU"),],[Button.url("𝗔𝗕𝗗𝗢 𝗔𝗦𝗜𝗟 - ســـــــــيزر", "https://t.me/ttccss"), Button.url("- ♫𝗘𝗹𝗸𝗲𝗮𝘁-𝗶𝗯 ¹: 🇾🇪⃤", "http://t.me/E_l_k_e_a_t_i_b"),]]
             if ROZ_PIC and ROZ_PIC.endswith((".jpg", ".png", "gif", "mp4")):
                 result = builder.photo(
                     ROZ_PIC, text=ROZ, buttons=buttons, link_preview=False
