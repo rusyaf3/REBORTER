@@ -11,9 +11,9 @@ async def _(event):
 
         return
 
-    animation_interval = 2
+    animation_interval = 1
 
-    animation_ttl = range(0, 11)
+    animation_ttl = range(0, 20)
 
     input_str = event.pattern_match.group(1)
 
@@ -48,7 +48,7 @@ async def _(event):
 
             await asyncio.sleep(animation_interval)
 
-            await event.edit(animation_chars[i % 11])
+            await event.edit(animation_chars[i % 20])
 
 
 CMD_HELP.update({"اشتمه": ".اشتمه \nفقط ارسل الامر "})
